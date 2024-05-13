@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby - Saldo disponible</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lstyles.css">
+</head>
+<body>
+    <div class="lobby-container">
+        <div class="saldo">
+            <h2>Saldo Disponible</h2>
+            <div id="saldoDisplay" class="saldo-amount">$10,000 USDT</div>
+            <div class="acciones">
+                <button><a href="cobrar/cobrar.html">Cobrar con Cripto</a></button>
+                <button><a href="fiat/fiat.html">Solicitar Cambio a Fiat</a></button>
+            </div>
+        </div>
+    
+        <div class="resumen">
+            <h2>Resumen Diario</h2>
+            <div class="summary-content">
+                <p>Ingresos: <span id="ingresosPlaceholder">2,548.00 USDT</span></p>
+                <p>Retiros pendientes: <span id="retirosPlaceholder">15,000.00 MXN</span></p>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="fiat/shared.js"></script>
+    <script>
+        // Ejemplo de actualización dinámica del saldo
+        document.getElementById('saldoDisplay').textContent = '$' + saldoDisponible + " USDT";
+    </script>

@@ -1,0 +1,64 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(TANGO_VIDEO.png);
+    background-color: #2B4B82; /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.conversor-container {
+    width: 320px; /* Ancho del conversor similar al de inicio de sesión */
+    max-width: 80%; /* Ancho máximo para adaptarse en pantallas grandes */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+.conversor-content {
+    margin-bottom: 20px;
+}
+
+.conversor-content input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.conversor-content button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #F7B4A7;
+    color: #2B4B82;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conversor-content button:hover {
+    background-color: #FF6B6B;
+}
+
+.resultado {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.mensaje-exito {
+    color: #2B4B82; /* Color hexadecimal para mensaje de éxito */
+    font-size: 24px;
+}
+
+
+

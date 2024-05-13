@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Cambio a Fiat</title>
+    <link rel="stylesheet" href="fstyles.css">
+</head>
+<body>
+    <div class="conversor-container">
+        <div class="conversor-content">
+            <h2>Solicitar retiro Fiat</h2>
+            <p>Saldo disponible: <span id="saldoDisponibleSpan">$10,000 USDT</span></p>
+            <input type="number" id="cantidadUSDT" placeholder="Ingrese la cantidad en USDT" min="0" step="0.01" required>
+        </div>
+        <div class="resultado">
+            <p>Monto a recibir en MXN:</p>
+            <p id="montoARecibir">0 MXN</p>
+            <p>Tipo de cambio actual: <br><span id="tipoCambio">1 USDT = 17.45 MXN</span></p>
+        </div>
+        <button id="aceptarButton">Aceptar</button>
+        <p class="mensaje-exito" style="display: none;">¡Retiro realizado con éxito!</p>
+    </div>
+
+    <script src="shared.js"></script>
+    <script src="fiat.js"></script>
+</body>
+</html>
+
+
+

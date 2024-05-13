@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobrar con Cripto</title>
+    <link rel="stylesheet" href="cobrar.css">
+</head>
+<body>
+    <div class="cobrar-container">
+        <div class="cobrar-content">
+            <h2>Selecciona la moneda</h2>
+            <select id="monedaSelect">
+                <option value="usdt">USDT</option>
+                <option value="btc">BTC</option>
+                <option value="eth">ETH</option>
+            </select>
+            <div class="imagen-container">
+                <img id="monedaImagen" src="" alt="Moneda" />
+            </div>
+            <input type="number" id="montoMXN" placeholder="Monto en MXN" min="0" step="0.01" required>
+            <button id="aceptarButton">Aceptar</button>
+            <div id="codigoQrContainer" class="codigo-qr-container"></div>
+            <p id="conversionResultado"></p>
+        </div>
+    </div>
+
+    <script src="cobrar.js"></script>
+</body>
+</html>
